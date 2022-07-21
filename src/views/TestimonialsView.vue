@@ -1,6 +1,7 @@
 <template>
   <div class="testimonials">
     <Testimonial/>
+    <rooter-view/>
     <Footer/>
   </div>
 </template>

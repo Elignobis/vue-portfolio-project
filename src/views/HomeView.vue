@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <HomeDetails/>
-    
+    <rooter-view/>
   </div>
 </template>
 
@@ -18,6 +18,7 @@ export default {
 <style scoped>
 .home {
   height: 100vh;
+  /* 
   background-image: radial-gradient(
     circle,
       rgba(206, 205, 228, 0.426) 0%,
@@ -26,6 +27,8 @@ export default {
     ), url("../assets/Images/joshua-sortino-LqKhnDzSF-8-unsplash.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed; */
+  
 }
 
 /* .home{

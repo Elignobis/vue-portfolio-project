@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="about" id="about">
     <WelcomeHome/>
     <Footer/>
   </div>
@@ -7,7 +7,8 @@
 
 <script>
 import WelcomeHome from '../components/WelcomeHome.vue';
-import Footer from '../components/Footer.vue';
+import Footer from '@/components/Footer.vue';
+
 
 
 export default {

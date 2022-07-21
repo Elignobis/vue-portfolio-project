@@ -15,7 +15,6 @@
           <router-link class="link" to="/testimonials">Testimonials</router-link>
           <router-link class="link" to="/projects">projects</router-link>
           <router-link class="link" to="/contact">Contact</router-link>
-          <router-link class="link" to="#" disabled>Login/Register</router-link>
         </ul>
       </div>
     </nav>

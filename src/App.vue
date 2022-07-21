@@ -2,7 +2,6 @@
   <div class="app-wrapper">
     <div class="app">
       <Navigation/>
-      
       <router-view />
     </div>
   </div>
@@ -10,6 +9,8 @@
 
 <script>
 import Navigation from './components/Navigation.vue';
+
+
 
 
 export default {

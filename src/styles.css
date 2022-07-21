@@ -7,6 +7,12 @@
     font-family: 'Ubuntu', "Montserrat", sans-serif !important;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .app {
     display: flex;
     flex-direction: column;
@@ -34,6 +40,12 @@
     color: red;
 }
 
+svg {
+    width: 24px;
+    height: auto;
+    color: #fff;
+}
+
 /* .icons {
     width: 15px;
     height: auto;
@@ -43,3 +55,10 @@
 
     /* background-color: rgb(0,0,0) !important;
     color: #fff;    */
+
+
+
+
+
+   
+   

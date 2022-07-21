@@ -1,14 +1,14 @@
 <template>
-  <div class="container my5">
+  <div class="container my5 min-vh-100" id="contact">
     <div class="container my-5 contact-2">
 
       <!-- Contact Google Style -->
 
-      <h2 class="text-center my-5 text-black">Get in touch
+      <h1 class="text-center my-5 text-white">Get in touch
         <!-- <span>G</span><span>e</span><span>t</span><span>&nbsp;</span><span>i</span><span>n</span><span>&nbsp;</span><span
           style="color: #4285F4;">t</span><span>o</span><span
-          style="color: rgb(52,168,83);">u</span><span>c</span><span>h</span><span>&nbsp;</span>--><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 32C114.6 32 .0272 125.1 .0272 240c0 49.63 21.35 94.98 56.97 130.7c-12.5 50.37-54.27 95.27-54.77 95.77c-2.25 2.25-2.875 5.734-1.5 8.734C1.979 478.2 4.75 480 8 480c66.25 0 115.1-31.76 140.6-51.39C181.2 440.9 217.6 448 256 448c141.4 0 255.1-93.13 255.1-208S397.4 32 256 32z"/></svg></span>
-      </h2>
+          style="color: rgb(52,168,83);">u</span><span>c</span><span>h</span><span>&nbsp;</span>--><span><svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 32C114.6 32 .0272 125.1 .0272 240c0 49.63 21.35 94.98 56.97 130.7c-12.5 50.37-54.27 95.27-54.77 95.77c-2.25 2.25-2.875 5.734-1.5 8.734C1.979 478.2 4.75 480 8 480c66.25 0 115.1-31.76 140.6-51.39C181.2 440.9 217.6 448 256 448c141.4 0 255.1-93.13 255.1-208S397.4 32 256 32z"/></svg></span>
+      </h1>
       <div class="row gx-5 mx-4 my-5 d-flex justify-content-center" >
         <div class="col-md-5 my-2" >
           <div class="row" style="box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);">
@@ -101,7 +101,8 @@ svg {
 }
 
 .glow {
-  width: 100vmax !important;
-  background-color: red !important;
+  background-color: #060C1F;
+  color: white;
 }
+
 </style>
