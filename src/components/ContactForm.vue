@@ -93,10 +93,15 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 svg {
     width: 24px;
     height: auto;
     color: #fff;
+}
+
+.glow {
+  width: 100vmax !important;
+  background-color: red !important;
 }
 </style>
