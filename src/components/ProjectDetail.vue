@@ -100,7 +100,7 @@ export default {
     display: flex;
     flex-direction: column;
     border-radius: 8px;
-    background-color: rgba(39, 167, 181, 0.735);
+    background-color: rgba(203, 210, 210, 0.735);
     min-height: 420px;
     transition: .5s ease all;
 }
