@@ -47,7 +47,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-5 my-2">
+        <div class="col-md-5 my-2" id="last-con">
           <div class="row" style="box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);">
             <h3 class="text-center" >Send me a message</h3>
             <form class="form form-con" action="https://formspree.io/f/myyobvqb" method="post">
@@ -75,8 +75,8 @@
               </div>
               <div class="row">
                 <div class="my-3">
-                  <input type="submit" class="btn  w-100 submit-con glow"
-                    >
+                  <button type="submit" class="btn  w-100 submit-con glow btn-custom"
+                    >Submit</button>
                 </div>
               </div>
             </form>
@@ -94,6 +94,51 @@ export default {
 </script>
 
 <style scoped>
+
+@keyframes btn-call {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 50%;
+    left: 0;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  75% {
+    top: 0;
+    left: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.btn-custom {
+  animation: btn-call 5s infinite;
+    -webkit-box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+          box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+  z-index: -1;
+  -webkit-animation-name: btn-call;
+          animation-name: btn-call;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+
+
+#last-con {
+  margin-bottom: 200px !important;
+}
+
 svg {
     width: 24px;
     height: auto;
@@ -104,5 +149,20 @@ svg {
   background-color: #060C1F;
   color: white;
 }
+.glow:hover::after{
+  transform: translate(0, 0);
+}
+.glow:hover {
+    border: 2px solid transparent;
+    color: rgb(246, 241, 250);
+    transform: scale(1.02);
+    will-change: transform;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+
 
 </style>

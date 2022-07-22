@@ -1,8 +1,8 @@
 <template>
-  <div class="container contact-2 mwidth vh-100" id="about">
+  <div class="container contact-2 mwidth mb-5" id="about">
     <div class="row">
         <div class="col-md-5 d-flex justify-content-center">
-            <img src="../assets/Images/Sibongile-about_1-removebg-preview.png" class="img-fluid" alt="" id="first-img">
+            <img src="../assets/Images/scott-rodgerson-G6dXvXN2gVM-unsplash-removebg-preview.png" class="img-fluid" alt="" id="first-img">
             <img src="../assets/Images/Sibongile-about_1-removebg-preview.png" alt="" id="second-img">
         </div>
         <div class="col-md-7 mt-5">
@@ -22,10 +22,10 @@
           </div>
         </div>
             
-            <!-- <router-link class="link" to="/projects"></router-link> -->
-           <!-- <input type="button" class="btn btn-primary me-5">View Projects -->
-           
-            <button type="button" class="btn btn-primary">Contact Me!</button>
+            
+      <router-link to="/contact"><button type="button" class="btn btn-custom glow">Contact Me!</button></router-link>
+            
+            
 
         </div>
     </div>
@@ -57,6 +57,93 @@ export default {
 </script>
 
 <style scoped>
+
+.btn-custom {
+  cursor: pointer;
+  z-index: 1000;
+}
+.glow:hover::after{
+  transform: translate(0, 0);
+}
+.glow:hover {
+    border: 2px solid transparent;
+    color: rgb(246, 241, 250);
+    transform: scale(1.02);
+    will-change: transform;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+
+@keyframes btn-call {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 50%;
+    left: 0;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  75% {
+    top: 0;
+    left: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.btn-custom {
+  animation: btn-call 5s infinite;
+    -webkit-box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+          box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+  z-index: -1;
+  -webkit-animation-name: btn-call;
+          animation-name: btn-call;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.btn-custom{
+  background-color: #060C1F;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: #59CBE8;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 30px;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5E5E5;
+  border-radius: 30px;
+}
+
+
+li {
+  z-index: -1;
+}
+
+#about{ 
+  margin-bottom: 0;
+}
+
 .con-hover {
   /* From https://css.glass */
 background: rgba(255, 255, 255, 0.87);
@@ -82,6 +169,7 @@ border: 1px solid rgba(255, 255, 255, 0.43);
 
 .mwidth {
   margin-bottom: .5em;
+  min-height: 80vh;
 }
 
 .squares {

@@ -89,7 +89,7 @@
 </div>
 
 <div class="linkp">
-  <a href=""><h1 class="viewp">View My Projects</h1></a>
+  <router-link to="/projects"><button class="viewp btn-custom">View My Projects</button></router-link>
 </div>
 
 
@@ -102,83 +102,7 @@
 
 
 
-    <!-- ===================================================================================================================== -->
-      
-      <!-- <div class="container">
-        <div class="row py-5">
-          <div class="col-md-6" data-aos="fade-right" data-aos-easing="ease-in-back" data-aos-duration="10000">
-            <h6 class="text-center">Soft Skills <i class="fas fa-people-arrows"
-                ></i>
-            </h6>
-            <div class="container rounded my-5 py-1 con-hover" >
-              <div class="row">
-                <div class="col-md-4 text-center py-1 ">
-                  <p style="font-family: Indie Flower;">communication</p>
-                  <i class="fas fa-comments fas1 justify-content-center" ></i>
-                </div>
-                <div class="col-md-4 text-center py-1">
-                  <p >Leadership</p>
-                  <i class="fas fa-hand-paper fas1 justify-content-center"></i>
-                </div>
-                <div class="col-md-4 text-center py-1">
-                  <p >Team work</p>
-                  <i class="fas fa-users fas1 justify-content-center" ></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 text-center py-1">
-                  <p>Work Ethic</p>
-                  <i class="fas fa-hard-hat fas1 justify-content-center"></i>
-                </div>
-                <div class="col-md-4 text-center py-1">
-                  <p>Critical Thinking</p>
-                  <i class="fas fa-brain fas1 justify-content-center"></i>
-                </div>
-                <div class="col-md-4 text-center py-1">
-                  <p>Adaptability</p>
-                  <i class="fas fa-exchange-alt fas1 justify-content-center" ></i>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-          <div class="col-md-6" data-aos="fade-left" data-aos-easing="ease-in-back" data-aos-duration="15000">
-            <h6 class="text-center">Technical Skills <i class="fas fa-code"
-                ></i></h6>
-            <div class="container rounded my-5 py-1 con-hover">
-              <div class="row">
-                <div class="col-md-4 text-center py-1">
-                  <p>HTML5</p>
-                  <i class="fab fa-html5 justify-content-center fab1"></i>
-                </div>
-                <div class="col-md-4 text-center py-1">
-                  <p>CSS3</p>
-                  <i class="fab fa-css3 justify-content-center fab1" ></i>
-                </div>
-                <div class="col-md-4 text-center py-1">
-                  <p>Bootstrap</p>
-                  <i class="fab fa-bootstrap justify-content-center fab1"></i>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 text-center py-1">
-                  <p>Microsoft Word</p>
-                  <i class="fa-solid fa-file-word justify-content-center fab1"></i>
-                </div>
-                <div class="col-md-4 text-center py-1">
-                  <p>Microsoft Excel</p>
-                  <i class="fa-solid fa-file-excel justify-content-center fab1"></i>
-                </div>
-                <div class="col-md-4 text-center py-1">
-                  <p>Bootstrap</p>
-                  <i class="fab fa-bootstrap justify-content-center fab1"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+    
 
     </div>
 </template>
@@ -199,14 +123,12 @@ a {
 #vue-c {
   color: green  ;
 }
-/* -------------------------------- */
-/* ------- wahs | copyright ------- */
-/* -------------------------------- */
+
 
 /* --------------Google Fonts-------------- */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap");
 
-/* --------------Reset-------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -218,7 +140,48 @@ a {
 .viewp {
   width: 400px ;
   text-align: center;
+  background-color: #060C1F;
+  color: white;
 
+}
+
+
+@keyframes btn-call {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 50%;
+    left: 0;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  75% {
+    top: 0;
+    left: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.btn-custom {
+  animation: btn-call 5s infinite;
+    -webkit-box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+          box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+  z-index: -1;
+  -webkit-animation-name: btn-call;
+          animation-name: btn-call;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .linkp {

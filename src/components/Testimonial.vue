@@ -1,6 +1,6 @@
 <template>
 
-  <div class="container contact-2 min-vh-100" id="testimonials">
+  <div class="container contact-2 min-vh-100 mb-5 mb-custom" id="testimonials">
 
 
       <!-- testimonials Google Style -->
@@ -15,54 +15,22 @@
 
       <div class="container text-black text-center">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1"
-              class="nav-circle active" aria-current="true"></button>
-            <button id="nav-circle-center" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1" aria-label="Slide 2" class="nav-circle"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
-              class="nav-circle"></button>
-          </div>
+          
           <div class="carousel-inner pb-5">
 
-   <div class="container py-3">
-          <div class="row">
-            <div class="col-lg-6 block">
-                <div class="testimonial carousel-item active">
-                    <div class="intro-image ">
-                        <img class="myimage" src="../assets/Images/joel3.jpg" alt="Joel Mukanya's image on testimonial carousel" width="200">
-                    </div>
-                    <div class="intro-quote">
-                      <div class="intro-quote-content">
-                          <blockquote>
-                            <p>Sibongile is a well-behaved, outstanding, self-motivated and helpful person.
-                  Sibongile works well with team and do well working alone, he always submit his work on time which is
-                  very functional. I will suggest you to hire him on the spot</p>
-                            <cite>Joel Mukanya, <strong>Coding Lecturer</strong></cite>
-                          </blockquote>
-                          
-                      </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-      </div>
+   
       <div class="container py-3">
           <div class="row">
-            <div class="col-lg-6">
-            </div>
-            <div class="col-lg-6 block">
-                <div class="testimonial carousel-item active">
+            <div class="col-md-6 my-4" v-for="(testimonial, index) in getTestimonials" :key="index">
+              <div class="testimonial carousel-item active" >
                     <div class="intro-image ">
-                        <img class="myimage" src="../assets/Images/HannahDalwai.jpg" alt="Hannah Dalwai's image on testimonial carousel" >
+                        <img class="myimage img-fluid" :src="testimonial.refImg" alt="Hannah Dalwai's image on testimonial carousel" >
                     </div>
                     <div class="intro-quote">
                       <div class="intro-quote-content">
                           <blockquote>
-                            <p>Sibongile is a diligent and driven individual with a keen eye for design. He
-                  is meticulous and always meets his deadlines in a timely manner. He will be a valuable asset to any
-                  team lucky enough to have him.</p>
-                            <cite>Hannah Dalwai, <strong>Coding Assistant</strong></cite>
+                            <p>{{ testimonial.testimonialDesc }}</p>
+                            <cite>{{ testimonial.refName }}, <strong>{{ testimonial.refTitle }}</strong></cite>
                           </blockquote>
                           
                       </div>
@@ -71,85 +39,16 @@
             </div>
           </div>
       </div>
-      <div class="container py-3">
-          <div class="row">
-            <div class="col-lg-6">
-            </div>
-            <div class="col-lg-6 block">
-                <div class="testimonial carousel-item active">
-                    <div class="intro-image ">
-                        <img class="myimage" src="../assets/Images/joel3.jpg" alt="Joel Mukanya's image on testimonial carousel" >
-                    </div>
-                    <div class="intro-quote">
-                      <div class="intro-quote-content">
-                          <blockquote>
-                            <p>Sibongile is a really great developer, always learning and in the forefront of
-                    new ideas and innovations. And always avails himself to help others when the need arises.</p>
-                            <cite>Philani Mxathule, <strong>Colleage</strong></cite>
-                          </blockquote>
-                          
-                      </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-      </div>
-
-
-            <div class="carousel-item">
-              <img class="myimage" src="../assets/Images/HannahDalwai.jpg" alt="Hannah Dalwai's image on testimonial carousel" >
-              <h5 class="my-3">Hannah Dalwai - Lecture Assistant</h5>
-              <p class="text-wrap"><em>Sibongile is a diligent and driven individual with a keen eye for design. He
-                  is meticulous and always meets his deadlines in a timely manner. He will be a valuable asset to any
-                  team lucky enough to have him.</em></p>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-con-custom">
-                <img class="myimage" src="#" alt="Amanda Gudlwa's profile image on testimonial carousel" >
-                <h5 class="my-3">Rasheedah Anhuizen - Colleague</h5>
-                <p class="text-wrap"><em>Sibongile is a really great developer, always learning and in the forefront of
-                    new ideas and innovations. And always avails himself to help others when the need arises.</em>
-                </p>
-              </div>
-            </div>
+    
+            
+          
           </div>
         </div>
       </div>
       <div>
 
       </div>
-      <!-- <div class="d-flex justify-content-center">
-        <p>
-          <button class="btn submit-con glow" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-            aria-expanded="false" aria-controls="collapseExample" >
-            View more testimonials
-          </button>
-        </p>
-      </div> -->
-      <!-- <div class="py-4 d-flex justify-content-center">
-        <div class="collapse" id="collapseExample">
-          <div class="card card-body">
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-4">
-                <h4 class="text-center">Philani Mxathule - Colleague</h4>
-                <img src="#" alt="Philani's profile image" class="img-fluid"
-                  >
-                <p><em>Sbo is a very hardworking and intellegent person, who will do anything in his power to help a
-                    person in need. Having him in any team is an advantage</em></p>
-              </div>
-              <div class="col-md-4">
-                <h4 class="text-center">Silizwe Pani - Colleague</h4>
-                <img src="#" alt="Silizwe's profile image" class="img-fluid"
-                  >
-                <p><em>Sibongile is a great web developer, and has a a bright future. He is innovative and always ready
-                    to learn and educate others.</em></p>
-                <p></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <hr>
+      
     </div>
 
 
@@ -160,12 +59,28 @@
 
 <script>
 export default {
-    name: 'Testimonials'
+    name: 'Testimonials',
+    computed: {
+      getTestimonials() {
+        return this.$store.state.testimonials
+      }
+    }
 }
 </script>
 
 <style scoped>
+img {
+    
+    width:  300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0 0;
+}
 
+
+.mb-custom {
+  margin-bottom: 100px !important;
+}
 
 
  .testimonial {
@@ -173,7 +88,7 @@ export default {
         position: relative;
     }
     .intro-image {
-        width: 20% !important;
+        width: 60%;
         margin-bottom: 2rem;
         margin-left: 1rem;
         

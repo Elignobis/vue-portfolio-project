@@ -44,7 +44,9 @@ svg {
     width: 24px;
     height: auto;
     color: #fff;
+    pointer-events: none;
 }
+
 
 /* .icons {
     width: 15px;
