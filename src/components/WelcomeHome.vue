@@ -296,7 +296,7 @@ border: 1px solid rgba(255, 255, 255, 0.43);
     height: 150px;
     animation-delay: 0s;
     animation-duration: 11s;
-}
+}"
 
 @keyframes animate {
     0% {
