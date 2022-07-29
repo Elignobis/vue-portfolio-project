@@ -117,7 +117,7 @@ export default {
 
 a {
   text-decoration: none !important;
-  color: white !important;
+  color: #10FAFE !important;
 }
 
 #vue-c {
@@ -343,7 +343,7 @@ p {
 .container-codepen .product-box .button:hover .add-btn,
 .container-codepen .product-box .button .add-btn:hover {
   transform: rotateX(360deg);
-  background-color: #ffffff;
+  background-color: #262424;
   color: #000000;
 }
 

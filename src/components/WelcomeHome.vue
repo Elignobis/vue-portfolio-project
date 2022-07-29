@@ -1,5 +1,5 @@
 <template>
-  <div class="container contact-2 mwidth mb-5" id="about">
+  <div class="container contact-2 mwidth my-5" id="about">
     <div class="row">
         <div class="col-md-5 d-flex justify-content-center">
             <img src="../assets/Images/scott-rodgerson-G6dXvXN2gVM-unsplash-removebg-preview.png" class="img-fluid" alt="" id="first-img">
@@ -137,7 +137,7 @@ export default {
 
 
 li {
-  z-index: -1;
+  z-index: -11;
 }
 
 #about{ 
@@ -296,7 +296,7 @@ border: 1px solid rgba(255, 255, 255, 0.43);
     height: 150px;
     animation-delay: 0s;
     animation-duration: 11s;
-}"
+}
 
 @keyframes animate {
     0% {
